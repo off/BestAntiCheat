@@ -26,6 +26,7 @@ public class Main extends JavaPlugin {
 
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new onPlayerMove(this), this);
+        pm.registerEvents(new onPlayerJoin(this), this);
 
     }
 
