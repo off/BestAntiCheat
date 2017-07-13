@@ -2,7 +2,6 @@ package com.glenjendary.bestanticheat.event;
 
 /* BestAntiCheat Created by Glenjendary on 5/07/2017. */
 
-import com.glenjendary.bestanticheat.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -10,13 +9,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 
-public class onPlayerJoin implements Listener {
-
-    private Main plugin;
-
-    public onPlayerJoin (Main plugin) {
-        this.plugin = plugin;
-    }
+public class PlayerJoin implements Listener {
 
     @EventHandler
     public void onPlayerJoin (PlayerJoinEvent event) {
